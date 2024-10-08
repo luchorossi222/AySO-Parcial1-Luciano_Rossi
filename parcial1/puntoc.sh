@@ -5,14 +5,14 @@ sudo useradd devops
 sudo useradd diseñador
 
 #"crear grupo"
-groupadd grupodevops  
-groupadd grupodiseño
-groupadd grupodeveloper
+sudo groupadd grupodevops  
+sudo groupadd grupodiseño
+sudo groupadd grupodeveloper
 
 #"agregar usuarios al grupo "
-usermod -aG grupodevops developer 
-usermod -aG grupodiseño tester
-usermod -aG grupodeveloper devops
+sudo usermod -aG grupodevops developer 
+sudo usermod -aG grupodiseño tester
+sudo usermod -aG grupodeveloper devops
 
 #esto se ejecuta desde /resultados ya que no estamos usando una ruta absoluta 
 
