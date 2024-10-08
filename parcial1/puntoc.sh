@@ -1,25 +1,26 @@
-sudo useradd developer
+#"crear usuario"
+sudo useradd developer 
 sudo useradd tester
 sudo useradd devops
 sudo useradd diseñador
 
-sudo groupadd grupodevops
-sudo groupadd grupodiseño
-sudo groupadd grupodeveloper
+#"crear grupo"
+groupadd grupodevops  
+groupadd grupodiseño
+groupadd grupodeveloper
 
-sudo usermod -aG grupodevops developer
-sudo usermod -aG grupodiseño tester
-sudo usermod -aG grupodeveloper devops
+#"agregar usuarios al grupo "
+usermod -aG grupodevops developer 
+usermod -aG grupodiseño tester
+usermod -aG grupodeveloper devops
 
-sudo chmod -r  750 /EXAMENES-UTN/alumno_1
-sudo chmod -r  760 /EXAMENES-UTN/alumno_2
-sudo chmod -r  700 /EXAMENES-UTN/alumno_3
-sudo chmod -r  775 /EXAMENES-UTN/profesores
+#esto se ejecuta desde /resultados ya que no estamos usando una ruta absoluta 
 
+sudo whoami > EXAMENES-UTN/alumno_1/validar.txt
+sudo whoami > EXAMENES-UTN/alumno_2/validar.txt   
+sudo whoami > EXAMENES-UTN/alumno_3/validar.txt
 
-sudo whoami > /Examentes-UTN/alumno_1/validar.txt
-sudo whoami > /Examentes-UTN/alumno_2/validar.txt
-sudo whoami > /Examentes-UTN/alumno_3/validar.txt
-
- 
-
+sudo chmod -r 750 EXAMENES-UTN/alumno_1
+sudo chmod -r 760 EXAMENES-UTN/alumno_2
+sudo chmod -r 700 EXAMENES-UTN/alumno_3
+sudo chmod -r 775 EXAMENES-UTN/profesores 
