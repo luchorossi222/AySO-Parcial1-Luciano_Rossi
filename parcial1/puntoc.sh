@@ -20,7 +20,7 @@ sudo whoami > EXAMENES-UTN/alumno_1/validar.txt
 sudo whoami > EXAMENES-UTN/alumno_2/validar.txt   
 sudo whoami > EXAMENES-UTN/alumno_3/validar.txt
 
-sudo chmod -r 750 EXAMENES-UTN/alumno_1
-sudo chmod -r 760 EXAMENES-UTN/alumno_2
-sudo chmod -r 700 EXAMENES-UTN/alumno_3
-sudo chmod -r 775 EXAMENES-UTN/profesores 
+sudo chmod -R 750 EXAMENES-UTN/alumno_1
+sudo chmod -R 760 EXAMENES-UTN/alumno_2
+sudo chmod -R 700 EXAMENES-UTN/alumno_3
+sudo chmod -R 775 EXAMENES-UTN/profesores 
